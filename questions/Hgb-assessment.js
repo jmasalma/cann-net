@@ -5,6 +5,11 @@ var fq_colors = {
 		1: {
 			"question": "Hgb Levels?",
 			"options": {
+				"hgb0": {
+					"label": "< 85 g/L or decreased by >= 15 g/L",
+					"val": "hgb0",
+					"nextQ": null
+				},
 				"hgb1": {
 					"label": "85 - 94 g/L",
 					"val": "hgb1",
@@ -92,7 +97,13 @@ var fq_colors = {
 	},
 	answers: {
 		patterns: {
-			"hgb1|on-esa|": {
+			
+			"hgb0|": {
+				"position": "Notify MD",
+				"content": "..."
+			}
+			
+			, "hgb1|on-esa|": {
 				"position": "Re-measure iron bloodwork if not done in past week",
 				"content": "If no dosage increase in the past 5 weeks..."
 			}
