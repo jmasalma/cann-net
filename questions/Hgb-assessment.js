@@ -1,4 +1,4 @@
-{
+var fq_colors = {
 	"containerID": "flowquest_container",
 	"usePushState" : false,
 	"questions": {
